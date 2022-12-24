@@ -1,0 +1,21 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npm run server1 & npm run client1",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "server": "cd server && npm run watch",
+    "client": "cd client && npm start",
+    "server1": "npm run watch --prefix server",
+    "client1": "npm start --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "morgan": "^1.10.0",
+    "react-scripts": "^5.0.1"
+  }
+}
